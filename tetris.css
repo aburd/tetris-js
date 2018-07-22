@@ -54,7 +54,7 @@ h1 {
   background: aliceblue;
 }
 
-.game-over {
+.game-over, .help {
   display: none;
   position: fixed;
   width: 100%;
@@ -70,6 +70,27 @@ h1 {
   padding: 0.5rem 1rem;
   border-radius: 6px;
   height: 40px;
+}
+
+.help-inner {
+  padding: 1rem 2rem;
+  background: #fff;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.help-inner .bold {
+  font-weight: bold;
+}
+
+.help-show {
+  font-family: 'VT323', monospace;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 button:focus {outline:0;}

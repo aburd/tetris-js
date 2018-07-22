@@ -46,6 +46,8 @@ const bodyEl = document.querySelector("body");
 const info = document.querySelector(".info");
 const gameOverScreen = document.querySelector(".game-over");
 const gameOverButton = document.querySelector(".game-over button");
+const helpScreen = document.querySelector(".help");
+const helpButton = document.querySelector(".help-show");
 const cvs = document.getElementById("tetris");
 const ctx = cvs.getContext("2d");
 ctx.scale(BOARD_WIDTH_PX / BOARD_WIDTH, BOARD_HEIGHT_PX / BOARD_HEIGHT);
@@ -433,6 +435,12 @@ gameOverButton.addEventListener("click", () => {
   gameOverScreen.style.display = "none";
   resetGame();
   start();
+});
+helpButton.addEventListener("click", () => {
+  if (helpScreen.style.display === "none") {
+    return helpScreen.style.display = "flex";
+  }
+  helpScreen.style.display = "none";
 });
 
 
