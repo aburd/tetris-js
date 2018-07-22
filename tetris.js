@@ -438,8 +438,10 @@ gameOverButton.addEventListener("click", () => {
 });
 helpButton.addEventListener("click", () => {
   if (helpScreen.style.display === "none") {
+    stop();
     return helpScreen.style.display = "flex";
   }
+  start();
   helpScreen.style.display = "none";
 });
 

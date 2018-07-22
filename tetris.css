@@ -67,6 +67,8 @@ h1 {
 }
 
 .game-over button {
+  font-family: 'VT323', monospace;
+  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   height: 40px;
